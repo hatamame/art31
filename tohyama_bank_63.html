@@ -1,0 +1,489 @@
+<html lang = "ja" encoding = "UTF-8">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<link rel = "stylesheet" href = "/css/tohyama_bank.css?=20250709">
+
+</head>
+<body class = "body_background" style = "margin:0;-webkit-text-size-adjust:100%;">
+    <section class = "wrapper">
+        <section class = "main_section">
+            <h1 class = "title">防府競輪場データ集<span class = "release_date">(2026/03/16)</span></h1>
+            <section class = "dr_tohyama_inserting">
+                <div class = "dr_tohyama_textbox">
+                    <p>競輪場データ集、第十五弾は防府競輪場じゃ。</p>
+                    <p>基本的な情報は以下の通りになっておるぞ。</p>
+                    <div class = "intro_data">
+                        <p>【場番号】#63</p>
+                        <p>【地区】中国</p>
+                        <p>【所在地】山口県防府市</p>
+                    </div>
+                    <p>本ページの情報は<b> 2026年3月1日時点</b>のものじゃ。2022年11月～2024年9月で大規模整備を実施し、走路改修とメインスタンドの建て替えが行われたんじゃ。券売機や観覧席、飲食店などが集約され、ユニバーサルデザインも導入されたぞ。遊具やパンプトラックも整備され、家族で楽しめる競輪場へと生まれ変わったんじゃ！</p>
+                    <p>集計期間は全て<b>2020年10月～2025年9月の5年間</b>じゃ。（「開催データ」の項目は除く）</p>
+                    <p>※「開催データ」の集計期間は"時間帯別の開催日数比率"と"クラス別のレース数比率"が<span style = "text-decoration:underline;font-weight:normal">2022年1月～2025年12月</span>、"2000年以降のGP･GI･GII開催"が<span style = "text-decoration:underline;font-weight:normal">2000年1月～2026年3月</span>じゃ。</p>
+                </div>
+                <img src = "/images/tohyama/tohyama_article_2024/doctor.png" class = "dr_tohyama_general"></img>
+            </section>
+        </section>
+
+        <section class = "main_section">
+            <h2 class = "outline">1. バンクデータ</h2>
+            <hr>
+            <div class="table-wrap_sp">
+                <table class="bk3-tp1b"> <!-- xdt63_1 -->
+                    <caption>バンクデータ</caption>
+                    <tr><th colspan="2">項目</th><th>防府競輪場</th><th>33バンク平均</th><th><span class="smlfont">400バンク平均<br>（参考データ）</span></th></tr>
+                    <tr><th colspan="2">周長</th><td>333m</td><td>333.3m<span class="sup3">※</span></td><td>400m</td></tr>
+                    <tr><th colspan="2">見なし直線</th><td>42.5m</td><td>41.6m</td><td>56.2m</td></tr>
+                    <tr><th colspan="2">カント</th><td>34.69°</td><td>33.97°</td><td>32.08°</td></tr>
+                    <tr><th rowspan="3">幅<br>員</th><th>ホーム</th><td>10.2m</td><td>10.6m</td><td>10.5m</td></tr>
+                    <tr><th>バック</th><td>9.1m</td><td>9.1m</td><td>9.4m</td></tr>
+                    <tr><th>センター</th><td>7.4m</td><td>7.8m</td><td>7.7m</td></tr>
+                    </table>
+            </div>
+
+            <section class = "dr_tohyama_inserting">
+                <div class = "dr_tohyama_textbox">
+                    <p>みなし直線・カント・走路幅員はいずれも33バンクの平均値に近いんじゃ。</p>
+                    <p>400バンクと比べれば直線は短くカントはきついが、<span style = "background:yellow">33バンクとしては標準的なバンク</span>と言えるじゃろうな。</p>
+                </div>
+                <img src = "/images/tohyama/tohyama_article_2024/doctor.png" class = "dr_tohyama_general"></img>
+            </section>
+        </section>
+
+        <section class = "main_section">
+            <h2 class = "outline">2. 開催データ</h2>
+            <hr>
+            <p><b>！ボタンをタップ(クリック)で表示の切替が可能じゃぞ</b></p>
+            <div class = "trans_section" name = "section_1">
+                <button class = "trans_button" id = "button_1" style = "background:black;">時間帯別</button>
+                <button class = "trans_button" id = "button_2">クラス別</button>
+                <button class = "trans_button" id = "button_3">G開催</button>
+            </div>
+            <section name = "section_1">
+                <section>
+                    <div class = "table-wrap_sp">
+                        <table class="bk1-tp2">
+                            <caption>時間帯別の開催日数比率 <span>（2022年～2025年）</span></caption>
+                            <tr><th>　</th><th>モーニング</th><th>昼間開催</th><th>ナイター</th><th>ミッドナイト</th><th>計</th></tr>
+                            <tr><th>比率<br>(開催日数)</th><td>66%<br>(110日)</td><td>34%<br>(56日)</td><td>0%<br>(0日)</td><td>0%<br>(0日)</td><td>100%<br>(166日)</td></tr>
+                            <tr><th>全場平均の比率</th><td>16%</td><td>31%</td><td>24%</td><td>29%</td><td>100%</td></tr>
+                        </table>
+                    </div>
+                </section>
+                <section style = "display:none;">
+                    <div class = "table-wrap_sp">
+                        <table class="bk1-tp2">
+                            <caption>クラス別のレース数比率 <span>（2022年～2025年）</span></caption>
+                            <tr><th>　</th><th>S級戦</th><th>A12班戦</th><th>チャレンジ</th><th>ガールズ</th><th>計</th></tr>
+                            <tr><th>比率<br>(レース数)</th><td>26%<br>(392)</td><td>46%<br>(695)</td><td>21%<br>(309)</td><td>7%<br>(101)</td><td>100%<br>(1497)</td></tr>
+                            <tr><th>全場平均の比率</th><td>28%</td><td>44%</td><td>21%</td><td>7%</td><td>100%</td></tr>
+                        </table>
+                    </div>
+                </section>
+                <section style = "display:none;">
+                    <div class = "table-wrap_sp">
+                        <table class="bk1-tp8">
+                            <caption>2000年以降のGP･GI･GII開催 <span>（2026年3月現在）</span></caption>
+                                <tr><th>開催年月</th><th>GP･GI･GII</th></tr>
+                                <tr><td>2002年4月</td><td>ふるさとダービー(GII)</td></tr>
+                                <tr class="cgp"><td>2006年11月</td><td>ふるさとダービー(GII)</td></tr>
+                                <tr><td>2015年4月</td><td>第31回共同通信社杯(GII)</td></tr>
+                                <tr class="cgp"><td>2026年3月</td><td>第10回ウィナーズカップ(GII)</td></tr>
+                        </table>
+                    </div>
+                    <div class = "table_add">
+                        <p>※ 2026年3月の開催は、現時点（2026.3.1）では予定。</p>
+                    </div>
+                </section>
+            </section>
+            <section class = "dr_tohyama_inserting">
+                <div class = "dr_tohyama_textbox" name = "section_1">
+                    <div>
+                        <p>モーニング競輪は、最初に試行実施された4場の一つとして2012年11月にスタートしたんじゃ。</p>
+                        <p><span style = "background:yellow">現在は本場開催の約3分の2をモーニングが占め、残り3分の1は昼間開催</span>となっておる。ナイターは実施しておらず、ミッドナイトは小倉競輪場を借り上げて開催しているぞ。</p>
+                    </div>
+                    <div style = "display:none;">
+                        <p>クラス別のレース数比率は、全場平均の比率とほぼ一致しておるな。</p>
+                    </div>
+                    <div style = "display:none;">
+                        <p>今年（2026年）3月には、「第10回ウィナーズカップ(GII)」が開催されるぞ。</p>
+                    </div>
+                </div>
+                <img src = "/images/tohyama/tohyama_article_2024/doctor.png" class = "dr_tohyama_general"></img>
+            </section>
+        </section>
+        <section class = "main_section">
+            <h2 class = "outline">3. 気象データ</h2>
+            <hr>
+            <div class = "trans_section" name = "section_2">
+                <button class = "trans_button" id = "button_1" style = "background:black;">雨レース率</button>
+                <button class = "trans_button" id = "button_2">風レース率</button>
+            </div>
+            <section name = "section_2">
+                <section>
+                    <div class = "table-wrap_sp">
+                        <table class="bk1-tp3">
+                            <caption>雨レース率 <span>（2020年10月～2025年9月）</span></caption>
+                            <tr><th rowspan="2">競輪場</th><th colspan="5">雨レース率</th></tr>
+                            <tr><th>年間</th><th class="detail">春<br><span>(3～5月)</span></th><th class="detail">夏<br><span>(6～8月)</span></th><th class="detail">秋<br><span>(9～11月)</span></th><th class="detail">冬<br><span>(12～2月)</span></th></tr>
+                            <tr><td>防府競輪場</td><td>10.0%</td><td>7.6%</td><td>15.9%</td><td>8.3%</td><td>9.8%</td></tr>
+                            <tr><td>全場平均<span class="sup3">※</span></td><td>10.0%</td><td>13.3%</td><td>10.7%</td><td>9.5%</td><td>7.0%</td></tr>
+                        </table>
+                    </div>
+                    <div class = "table_add">
+                        <p>※雨レース：雨天時のレース<br>※全場平均：ドーム競輪場（前橋・小倉）は除く</p>
+                    </div>
+                </section>
+                <section  style = "display:none;">
+                    <div class = "table-wrap_sp">
+                        <table class="bk1-tp3">
+                            <caption>風レース率 <span>（2020年10月～2025年9月）</span></caption>
+                            <tr><th rowspan="2">競輪場</th><th colspan="5">風レース率<span>（風速3m以上）</span></th></tr>
+                            <tr><th>年間</th><th class="detail">春<br><span>(3～5月)</span></th><th class="detail">夏<br><span>(6～8月)</span></th><th class="detail">秋<br><span>(9～11月)</span></th><th class="detail">冬<br><span>(12～2月)</span></th></tr>
+                            <tr><td>防府競輪場</td><td>0.2%</td><td>0.0%</td><td>0.5%</td><td>0.2%</td><td>0.0%</td></tr>
+                            <tr><td>全場平均<span class="sup3">※</span></td><td>6.0%</td><td>7.2%</td><td>4.9%</td><td>3.9%</td><td>7.9%</td></tr>
+                        </table>
+                    </div>
+                    <div class = "table_add">
+                        <p>※風レース：風速3m以上時のレース（レースに影響が出てくる風の強さを風速3mと想定）<br>※全場平均：ドーム競輪場（前橋・小倉）は除く</p>
+                    </div>
+                </section>
+            </section>
+            <section class = "dr_tohyama_inserting">
+                <div class = "dr_tohyama_textbox" name = "section_2">
+                    <div>
+                        <p>防府競輪場の<span style="background:yellow">年間の雨レース率は10.0％で、全場平均と同じ水準</span>じゃ。</p>
+                        <p>季節別では、<span style="background:yellow">夏が15.9％と最も高く</span>全場平均を上回るが、<span style="background:yellow">春は平均より低く、秋・冬はおおむね平均的</span>じゃな。</p>
+                        <p>気象統計データでも、防府市は7月の降水量が年間で最も多く、この気象傾向が雨レース率のデータにも表れておるぞ。</p>
+                    </div>
+                    <div style = "display:none;">
+                        <p>防府競輪場の<span style="background:yellow">風レース率は年間0.2％と、全場平均6.0％に比べて極めて低い</span>んじゃ。</p>
+                        <p>季節別に見ても1％を超える時期はなく、<span style="background:yellow">風の影響が小さいバンク</span>と言えるのぉ。</p>
+                        <p>瀬戸内海沿岸に位置する防府市は年間を通して風が弱い地域であり、その気象傾向が風レース率のデータにそのまま表れておるわけじゃ。</p>
+                    </div>
+                </div>
+                <img src = "/images/tohyama/tohyama_article_2024/doctor.png" class = "dr_tohyama_general"></img>
+            </section>
+        </section>
+
+        <section class = "main_section" id = "class_average1_">
+            <h2 class = "outline">4. 決まり手データ</h2>
+            <hr>
+            <div class = "trans_section" name = "section_3">
+                <button class = "trans_button" id = "button_1" style = "background:black;">1着</button>
+                <button class = "trans_button" id = "button_2">2着</button>
+                <button class = "trans_button" id = "button_3">1・2着</button>
+            </div>
+            <div class = "table-wrap_sp" name = "section_3">
+                <table class="bk1-tp4 bk3-tp4b">
+                    <caption>決まり手比率 <span>（2020年10月～2025年9月）</span></caption>
+                    <tr><th colspan="2">競輪場<br><span>クラス・車立て</span></th><th>1着決まり手比率（%）</th></tr>
+                    <tr><td rowspan="6" class="bkname">防<br>府</td><td class="clsn">S級戦・9車立て</td><td><span class="ngc" style="width:17.7%;">逃げ<br>17.7</span><span class="mkc" style="width:39.4%;">捲り<br>39.4</span><span class="ssc" style="width:42.9%;">差し<br>42.9</span></td></tr>
+                    <tr><td class="clsn">S級戦・7車立て</td><td><span class="ngc" style="width:24.7%;">逃げ<br>24.7</span><span class="mkc" style="width:28.4%;">捲り<br>28.4</span><span class="ssc" style="width:46.9%;">差し<br>46.9</span></td></tr>
+                    <tr><td class="clsn">A12班戦・7車立て</td><td><span class="ngc" style="width:29.8%;">逃げ<br>29.8</span><span class="mkc" style="width:33.0%;">捲り<br>33.0</span><span class="ssc" style="width:37.2%;">差し<br>37.2</span></td></tr>
+                    <tr><td class="clsn">チャレンジ・7車立て</td><td><span class="ngc" style="width:42.4%;">逃げ<br>42.4</span><span class="mkc" style="width:28.1%;">捲り<br>28.1</span><span class="ssc" style="width:29.5%;">差し<br>29.5</span></td></tr>
+                    <tr><td class="clsn">ガールズ・7車立て</td><td><span class="ngc" style="width:32.6%;">逃げ<br>32.6</span><span class="mkc" style="width:41.7%;">捲り<br>41.7</span><span class="ssc" style="width:25.7%;">差し<br>25.7</span></td></tr>
+                    <tr><td><a href="#class_average" class="to_footer">クラス平均値</a></td><td><span class="ngc" style="width:30.5%;">逃げ<br>30.5</span><span class="mkc" style="width:32.3%;">捲り<br>32.3</span><span class="ssc" style="width:37.2%;">差し<br>37.2</span></td></tr>
+                    <tr><td colspan="2">33バンク平均</td><td><span class="ngc" style="width:30.7%;">逃げ<br>30.9</span><span class="mkc" style="width:31.7%;">捲り<br>31.9</span><span class="ssc" style="width:36.8%;">差し<br>37.1</span><span class="kkc" style="width:0.8%;"></span></td></tr>
+                    <tr><td colspan="2">全場平均</td><td><span class="ngc" style="width:24.8%;">逃げ<br>25.0</span><span class="mkc" style="width:29.2%;">捲り<br>29.4</span><span class="ssc" style="width:45.2%;">差し<br>45.5</span></span><span class="kkc" style="width:0.8%;"></span></td></tr>
+                </table>
+
+                <table class="bk1-tp4 bk3-tp4b" style = "display:none">
+                    <caption>決まり手比率 <span>（2020年10月～2025年9月）</span></caption>
+                    <tr><th colspan="2">競輪場<br><span>クラス・車立て</span></th><th>2着決まり手比率（%）</th></tr>
+                    <tr><td rowspan="6" class="bkname">防<br>府</td><td class="clsn">S級戦・9車立て</td><td><span class="ngc" style="width:23.0%;">逃げ<br>22.6</span><span class="mkc" style="width:15.0%;">捲り<br>15.0</span><span class="ssc" style="width:17.0%;">差し<br>17.3</span><span class="kkc" style="width:45.0%;">マーク<br>45.1</span></td></tr>
+                    <tr><td class="clsn">S級戦・7車立て</td><td><span class="ngc" style="width:23.0%;">逃げ<br>22.9</span><span class="mkc" style="width:15.0%;">捲り<br>15.0</span><span class="ssc" style="width:24.0%;">差し<br>24.4</span><span class="kkc" style="width:38.0%;">マーク<br>37.7</span></td></tr>
+                    <tr><td class="clsn">A12班戦・7車立て</td><td><span class="ngc" style="width:21.0%;">逃げ<br>21.3</span><span class="mkc" style="width:12.0%;">捲り<br>11.7</span><span class="ssc" style="width:21.0%;">差し<br>20.8</span><span class="kkc" style="width:46.0%;">マーク<br>46.2</span></td></tr>
+                    <tr><td class="clsn">チャレンジ・7車立て</td><td><span class="ngc" style="width:21.0%;">逃げ<br>20.9</span><span class="mkc" style="width:11.0%;">捲り<br>11.0</span><span class="ssc" style="width:16.0%;">差し<br>16.5</span><span class="kkc" style="width:52.0%;">マーク<br>51.6</span></td></tr>
+                    <tr><td class="clsn">ガールズ・7車立て</td><td><span class="ngc" style="width:22.0%;">逃げ<br>22.0</span><span class="mkc" style="width:15.0%;">捲り<br>15.1</span><span class="ssc" style="width:12.0%;">差し<br>12.1</span><span class="kkc" style="width:51.0%;">マーク<br>50.8</span></td></tr>
+                    <tr><td><a href="#class_average" class="to_footer">クラス平均値</a></td><td><span class="ngc" style="width:21.0%;">逃げ<br>21.7</span><span class="mkc" style="width:13.0%;">捲り<br>12.7</span><span class="ssc" style="width:20.0%;">差し<br>19.7</span><span class="kkc" style="width:46.0%;">マーク<br>45.9</span></td></tr>
+                    <tr><td colspan="2">33バンク平均</td><td><span class="ngc" style="width:22.0%;">逃げ<br>21.9</span><span class="mkc" style="width:13.0%;">捲り<br>13.2</span><span class="ssc" style="width:20.0%;">差し<br>19.7</span><span class="kkc" style="width:45.0%;">マーク<br>45.2</span></td></tr>
+                    <tr><td colspan="2">全場平均</td><td><span class="ngc" style="width:20.0%;">逃げ<br>19.9</span><span class="mkc" style="width:14.0%;">捲り<br>14.1</span><span class="ssc" style="width:25.0%;">差し<br>24.7</span><span class="kkc" style="width:41.0%;">マーク<br>41.3</span></td></tr>
+                </table>
+
+                <table class="bk1-tp4 bk3-tp4" style = "display:none">
+                    <caption>決まり手比率 <span>（2020年10月～2025年9月）</span></caption>
+                    <tr><th colspan="2">競輪場<br><span>クラス・車立て</span></th><th>1・2着決まり手上位5個（%）</th></tr>
+                    <tr><td rowspan="6" class="bkname">防<br>府</td><td class="clsn">S級戦・9車立て</td><td><span class="mkc" style="width:27.5%;">捲マ<br>25.7</span><span class="ssc" style="width:23.2%;">差逃<br>21.1</span><span class="ngc" style="width:15.8%;">逃マ<br>13.7</span><span class="ssc" style="width:12.2%;">差捲<br>10.3</span><span class="mkc" style="width:10.4%;">捲差<br>8.6</span><span class="ccc" style="width:10.9%;">他<br>20.6</span></td></tr>
+                    <tr><td class="clsn">S級戦・7車立て</td><td><span class="ssc" style="width:21.9%;">差逃<br>20.1</span><span class="ngc" style="width:19.9%;">逃マ<br>17.9</span><span class="mkc" style="width:14.9%;">捲マ<br>12.9</span><span class="ssc" style="width:13.6%;">差捲<br>11.7</span><span class="mkc" style="width:12.4%;">捲差<br>10.5</span><span class="ccc" style="width:17.3%;">他<br>26.9</span></td></tr>
+                    <tr><td class="clsn">A12班戦・7車立て</td><td><span class="ngc" style="width:24.8%;">逃マ<br>22.9</span><span class="mkc" style="width:20.1%;">捲マ<br>18.0</span><span class="ssc" style="width:19.1%;">差逃<br>17.1</span><span class="mkc" style="width:10.1%;">捲差<br>8.3</span><span class="ssc" style="width:9.5%;">差差<br>7.8</span><span class="ccc" style="width:16.4%;">他<br>25.9</span></td></tr>
+                    <tr><td class="clsn">チャレンジ・7車立て</td><td><span class="ngc" style="width:33.2%;">逃マ<br>31.7</span><span class="ssc" style="width:17.2%;">差逃<br>15.0</span><span class="mkc" style="width:16.2%;">捲マ<br>14.0</span><span class="mkc" style="width:8.6%;">捲差<br>6.9</span><span class="ngc" style="width:7.7%;">逃差<br>6.1</span><span class="ccc" style="width:17.1%;">他<br>26.3</span></td></tr>
+                    <tr><td class="clsn">ガールズ・7車立て</td><td><span class="ngc" style="width:26.2%;">逃マ<br>24.2</span><span class="mkc" style="width:25.4%;">捲マ<br>23.5</span><span class="ssc" style="width:14.2%;">差逃<br>12.1</span><span class="mkc" style="width:9.3%;">捲逃<br>7.6</span><span class="ssc" style="width:9.3%;">差捲<br>7.6</span><span class="ccc" style="width:15.6%;">他<br>25.0</span></td></tr>
+                    <tr><td><a href="#class_average" class="to_footer">クラス平均値</a></td><td><span class="ngc" style="width:24.9%;">逃マ<br>23.1</span><span class="mkc" style="width:19.3%;">捲マ<br>17.3</span><span class="ssc" style="width:19.3%;">差逃<br>17.2</span><span class="mkc" style="width:10.1%;">捲差<br>8.3</span><span class="ssc" style="width:9.9%;">差捲<br>8.2</span><span class="ccc" style="width:16.5%;">他<br>25.9</span></td></tr>
+                    <tr><td colspan="2">33バンク平均</td><td><span class="ngc" style="width:24.8%;">逃マ<br>22.9</span><span class="ssc" style="width:19.0%;">差逃<br>16.9</span><span class="mkc" style="width:18.2%;">捲マ<br>16.1</span><span class="mkc" style="width:9.5%;">捲差<br>7.8</span><span class="ssc" style="width:9.2%;">差捲<br>7.5</span><span class="ccc" style="width:19.3%;">他<br>28.8</span></td></tr>
+                    <tr><td colspan="2">全場平均</td><td><span class="ngc" style="width:19.6%;">逃マ<br>17.6</span><span class="ssc" style="width:18.1%;">差逃<br>16.1</span><span class="mkc" style="width:16.7%;">捲マ<br>14.7</span><span class="ssc" style="width:13.1%;">差差<br>11.2</span><span class="ssc" style="width:11.4%;">差捲<br>9.5</span><span class="ccc" style="width:21.1%;">他<br>30.9</span></td></tr>
+                </table>
+
+            </div>
+
+            <div class = "table_add">
+                <p>※決まり手比率はバンクの周長によって違いが出るので、ここでは比較対象を全国の33バンク平均としたぞ。</p>
+            </div>
+            <section class = "dr_tohyama_inserting">
+                <div class = "dr_tohyama_textbox" name = "section_3">
+                    <div>
+                        <p>1着決まり手比率のクラス平均値は、<span style = "background:yellow">33バンク平均とほぼ一致しておる</span>ぞ。</p>
+                        <p>一方で、400バンク中心の全場平均と比べると、<span style = "background:yellow">逃げと捲りの比率が高く、差しの比率が低く</span>なっておるな。</p>
+                    </div>
+                    <div style = "display:none;">
+                    <p>2着決まり手比率のクラス平均値も<span style = "background:yellow">33バンク平均とほぼ同水準</span>じゃ。</p>
+                    <p>こちらも全場平均と比べると、<span style = "background:yellow">マークの比率が高く、差しの比率が低め</span>になっておるぞ。</p>
+                    </div>
+                    <div style = "display:none;">
+                        <p>1・2着決まり手のクラス平均値は、<span style = "background:yellow">上位構成は33バンク平均とほぼ同じ</span>で、順位の入れ替わりはあるものの数値差は小さいのぉ。</p>
+                        <p>全場平均と比べると、<span style = "background:yellow">防府は「逃マ」「捲マ」の比率が高く、「差差」のような追い込み決着は上位に入っておらんのが特徴</span>じゃな。</p>
+                    </div>
+                </div>
+                <img src = "/images/tohyama/tohyama_article_2024/doctor.png" class = "dr_tohyama_general"></img>
+            </section>
+            <div class = "annotation_explanation">
+                <p class = "first"><b>【memo】</b></p>
+                <p>決まり手比率はクラスによって差がある。1着決まり手は、新人選手が先行で勝負するチャレンジでは「逃げ」の比率が高いが、A12班戦・S級戦とクラスが上がると「捲り」や「差し」の比率が高くなる。またガールズでは「捲り」の比率がかなり高い。これらの傾向は全競輪場で同じである。</p>
+            </div>
+        </section>
+
+    <section class = "main_section" id = "class_average2_">
+        <h2 class = "outline">5. 上がりタイム</h2>
+        <hr>
+        <div class = "trans_section" name = "section_4">
+            <button class = "trans_button" id = "button_1" style = "background:black;">最高</button>
+            <button class = "trans_button" id = "button_2">平均</button>
+        </div>
+
+        <section  name = "section_4">
+            <section>
+                <div class = "table-wrap_sp">
+                    <table class="bk1-tp10">
+                        <caption>最高上がりタイム</caption>
+                        <tr><th>タイム</th><th>記録日</th><th>記録選手</th></tr>
+                        <tr><td>8.8秒</td><td>2015年4月27日</td><td>新田　祐大&thinsp; （90期）</td></tr>
+                    </table>
+                </div>
+            </section>
+            <section style = "display:none;">
+                <div class = "table-wrap_sp">
+                    <table class="bk1-tp5">
+                        <caption>平均上がりタイム <span>（2020年10月～2025年9月）</span></caption>
+                        <tr><th>競輪場</th><th><a href="#class_average" class="to_footer" style = "color:white;">クラス<br>平均値</a></th><th>S級戦</th><th>A12班戦</th><th>チャレンジ</th><th>ガールズ</th></tr>
+                        <tr><td>防府競輪場</td><td>10.09秒</td><td>9.83秒</td><td>10.10秒</td><td>10.34秒</td><td>10.34秒</td></tr>
+                        <tr style="background-color: #fdffbb;"><td>33バンク平均</td><td>10.10秒</td><td>9.86秒</td><td>10.12秒</td><td>10.28秒</td><td>10.43秒</td></tr>
+                    </table>
+                </div>
+            </section>
+        </section>
+
+        <section class = "dr_tohyama_inserting">
+            <div class = "dr_tohyama_textbox" name = "section_4">
+                <div>
+                    <p>防府競輪場の最高上がりタイム 8.8秒 は、33バンクとしてはやや速い水準じゃな（33バンク平均は 8.84秒）。</p>
+                    <p>この記録は、2015年4月の共同通信社杯（二次予選）で、福島の新田祐大選手（90期）が最終1センター・5番手からの捲りで作った大記録じゃ！</p>
+                    <p>その後、2017年9月にパーキンス選手（豪）、2018年7月にグレーツァー選手（豪）とボス選手（蘭）の3人が同タイムをマークしておるぞ。</p>
+                </div>
+                <div style = "display:none;">
+                    <p>防府競輪場の<span style = "background:yellow">平均上がりタイムは10.09秒で33バンク7場中2位</span>じゃ。</p>
+                    <p>ドームである前橋競輪場を除けば実質的にトップであり、<span style = "background:yellow">風が弱いという気候条件も重なって、33バンクの中でも高速寄りのバンク</span>と言えるじゃろうな。</p>
+                </div>
+            </div>
+            <img src = "/images/tohyama/tohyama_article_2024/doctor.png" class = "dr_tohyama_general"></img>
+        </section>
+    </section>
+    <section class = "main_section" id = "class_average3_">
+        <h2 class = "outline">6. 配当データ</h2>
+        <hr>
+        <div class = "trans_section" name = "section_5">
+            <button class = "trans_button" id = "button_1" style = "background:black;">2車単</button>
+            <button class = "trans_button" id = "button_2">3連単</button>
+        </div>
+
+        <div class = "table-wrap_sp" name = "section_5">
+            <table class="bk1-tp6 bk3-tp6c">
+                <caption>2車単の配当額・人気車券比率・万車券比率 <span>（2020年10月～2025年9月）</span></caption>
+                <tr><th colspan="2" rowspan="2">競輪場<br><span>クラス・車立て</span></th><th colspan="2">配当額</th><th colspan="3">人気車券比率<span class="sup3">※</span></th><th colspan="2">万車券比率</th></tr>
+                <tr><th>中央値</th><th>平均値</th><th>1番人気</th><th>2番人気</th><th>3番人気</th><th>1万以上</th><th>3万以上</th></tr>
+                <tr><td rowspan="6" class="bkname">防<br>府</td><td>S級戦・9車立て</td><td>710円</td><td>2,067円</td><td>35.6%</td><td>16.9%</td><td>8.1%</td><td>4.4%</td><td>0.0%</td></tr>
+                <tr><td>S級戦・7車立て</td><td>1,200円</td><td>3,431円</td><td>19.7%</td><td>18.2%</td><td>7.6%</td><td>9.2%</td><td>0.6%</td></tr>
+                <tr><td>A12班戦・7車立て</td><td>980円</td><td>2,406円</td><td>25.8%</td><td>13.9%</td><td>9.5%</td><td>4.7%</td><td>0.3%</td></tr>
+                <tr><td>チャレンジ・7車立て</td><td>620円</td><td>2,881円</td><td>36.6%</td><td>13.6%</td><td>9.4%</td><td>5.2%</td><td>1.5%</td></tr>
+                <tr><td>ガールズ・7車立て</td><td>440円</td><td>1,857円</td><td>30.1%</td><td>23.0%</td><td>16.8%</td><td>4.4%</td><td>0.9%</td></tr>
+                <tr><td><a href="#class_average" class="to_footer">クラス平均値</a></td><td>888円</td><td>2,635円</td><td>28.0%</td><td>15.6%</td><td>9.5%</td><td>5.6%</td><td>0.6%</td></tr>
+                <tr><td colspan="2">33バンク平均</td><td>904円</td><td>2,593円</td><td>28.4%</td><td>15.5%</td><td>9.0%</td><td>5.3%</td><td>0.7%</td></tr>
+                <tr><td colspan="2">全場平均</td><td>976円</td><td>2,630円</td><td>26.7%</td><td>15.3%</td><td>9.0%</td><td>5.2%</td><td>0.7%</td></tr>
+            </table>
+            <table class="bk1-tp6 bk3-tp6c" style = "display:none">
+                <caption>3連単の配当額・人気車券比率・万車券比率 <span>（2020年10月～2025年9月）</span></caption>
+                <tr><th colspan="2" rowspan="2">競輪場<br><span>クラス・車立て</span></th><th colspan="2">配当額</th><th colspan="3">人気車券比率<span class="sup3">※</span></th><th colspan="2">万車券比率</th></tr>
+                <tr><th>中央値</th><th>平均値</th><th>1番人気</th><th>2番人気</th><th>3番人気</th><th>3万以上</th><th>10万以上</th></tr>
+                <tr><td rowspan="6" class="bkname">防<br>府</td><td>S級戦・9車立て</td><td>3,780円</td><td>13,075円</td><td>13.1%</td><td>9.4%</td><td>5.6%</td><td>11.9%</td><td>1.3%</td></tr>
+                <tr><td>S級戦・7車立て</td><td>5,150円</td><td>19,778円</td><td>9.4%</td><td>7.3%</td><td>7.6%</td><td>14.2%</td><td>4.2%</td></tr>
+                <tr><td>A12班戦・7車立て</td><td>3,685円</td><td>11,839円</td><td>11.6%</td><td>8.2%</td><td>5.8%</td><td>9.9%</td><td>1.3%</td></tr>
+                <tr><td>チャレンジ・7車立て</td><td>2,265円</td><td>14,914円</td><td>20.8%</td><td>10.3%</td><td>4.8%</td><td>8.5%</td><td>3.0%</td></tr>
+                <tr><td>ガールズ・7車立て</td><td>1,370円</td><td>8,931円</td><td>16.8%</td><td>10.6%</td><td>9.7%</td><td>5.3%</td><td>2.6%</td></tr>
+                <tr><td><a href="#class_average" class="to_footer">クラス平均値</a></td><td>3,523円</td><td>13,917円</td><td>13.6%</td><td>8.7%</td><td>6.2%</td><td>10.3%</td><td>2.3%</td></tr>
+                <tr><td colspan="2">33バンク平均</td><td>3,666円</td><td>14,041円</td><td>13.9%</td><td>8.9%</td><td>5.9%</td><td>10.6%</td><td>2.4%</td></tr>
+                <tr><td colspan="2">全場平均</td><td>4,024円</td><td>14,053円</td><td>13.0%</td><td>8.2%</td><td>6.0%</td><td>10.5%</td><td>2.3%</td></tr>
+            </table>
+        </div>
+        <div class = "table_add_35_6">
+            <p>※人気車券比率の'1番人気'は、的中車券が1番人気だった比率（2番人気、3番人気も同様）</p>
+        </div>
+
+        <section class = "dr_tohyama_inserting">
+            <div class = "dr_tohyama_textbox" name = "section_5">
+                <div>
+                    <p>防府競輪場の<span style = "background:yellow">2車単配当の中央値は888円で、全場平均(976円)より低い</span>んじゃ。</p>
+                    <p>周長の短い33バンクは、全体的に配当中央値が低い傾向にあり、防府もその特徴を示しておるな。<span style = "background:yellow">33バンクは1番人気車券率が高く、これが中央値を押し下げる要因</span>と考えられそうじゃ。</p>
+                    <p>一方で、平均配当は2,635円と、こちらは全場平均や33バンク平均とほぼ同水準じゃぞ。</p>
+                </div>
+                <div style = "display:none;">
+                    <p>同じく<span style = "background:yellow">3連単配当の中央値も3,523円で、全場平均(4,024円)より低め</span>じゃ。</p>
+                    <p><span style = "background:yellow">33バンク特有の、1番・2番人気車券率がやや高めの傾向が、中央値を抑える要因</span>になっておるんじゃな。</p>
+                    <p>こちらも平均配当は13,917円で、全場平均や33バンク平均とほぼ同水準となっておるぞ。</p>
+                </div>
+            </div>
+            <img src = "/images/tohyama/tohyama_article_2024/doctor.png" class = "dr_tohyama_general"></img>
+        </section>
+    </section>
+
+    <section class = "main_section"  id = "class_average4_">
+        <h2 class = "outline">7. スジ車券率と力車券率</h2>
+        <hr>
+        <table class="bk3-tp6b colptn35-2">
+            <caption>スジ車券率と力車券率 <span>（2020年10月～2025年9月）</span></caption>
+            <tr><th colspan="2">競輪場<br><span>クラス・車立て</span></th><th>スジ車券率<span class="sup3">※</span></th><th>力車券率<span class="sup3">※</span></th></tr>
+            <tr><td rowspan="6" class="bkname">防<br>府</td><td><span>S級戦・9車立て</span></td><td>70.4%</td><td>33.3%</td></tr>
+            <tr><td><span>S級戦・7車立て</span></td><td>56.1%</td><td>22.0%</td></tr>
+            <tr><td><span>A12班戦・7車立て</span></td><td>55.1%</td><td>23.9%</td></tr>
+            <tr><td><span>チャレンジ・7車立て</span></td><td>55.8%</td><td>30.0%</td></tr>
+            <tr><td><span>ガールズ・7車立て</span></td><td>--</td><td>41.6%</td></tr>
+            <tr><td><a href="#class_average" class="to_footer">クラス平均値</a></td><td>56.9%</td><td>26.8%</td></tr>
+            <tr><td colspan="2">33バンク平均</td><td>55.2%</td><td>27.0%</td></tr>
+            <tr><td colspan="2">全場平均</td><td>53.5%</td><td>26.9%</td></tr>
+        </table>
+
+        <div class = "table_add">
+            <p>※スジ車券率：並び予想で前後に並んだ選手で1⇔2着となったレースの比率。<br>※力車券率：脚力上位の2人（G指数が上位の2人）で1⇔2着となったレースの比率。</p>
+        </div>
+
+        <section class = "dr_tohyama_inserting">
+            <div class = "dr_tohyama_textbox">
+                <div>
+                    <p>スジ車券率はバンク周長と相関があり、周長の短い33バンクは400・500バンクよりも高くなる傾向があるんじゃ。</p>
+                    <p>防府競輪場の<span style = "background:yellow">スジ車券率56.9％は、33バンク平均（55.2％）をも上回る高い水準</span>じゃな。全42場でも前橋競輪場に次ぐ2番目の高さで、全国的に見ても<span style = "background:yellow">スジ車券が非常に決まりやすい競輪場</span>と言えるぞ！</p>
+                    <p>一方、力車券率にはバンク周長との明確な相関は見られず、防府の<span style = "background:yellow">力車券率26.8％も、全場平均（26.9％）や33バンク平均（27.0％）とほぼ同水準</span>じゃ。こちらは全国的に見ても標準的な数値じゃな。</p>
+                </div>
+            </div>
+            <img src = "/images/tohyama/tohyama_article_2024/doctor.png" class = "dr_tohyama_general"></img>
+        </section>
+    </section>
+
+    <section class = "main_section" id = "class_average5_">
+        <h2 class = "outline">8. 1着・2着選手のライン上の位置</h2>
+        <hr>
+        <div class = "trans_section" name = "section_6">
+            <button class = "trans_button" id = "button_1" style = "background:black;">1着選手</button>
+            <button class = "trans_button" id = "button_2">2着選手</button>
+        </div>
+
+        <div class = "table-wrap_sp"  name = "section_6">
+            <table class="bk3-tp6b colptn35-3">
+                <caption>1着選手の予想並び上の位置 <span>（2020年10月～2025年9月）</span></caption>
+                <tr><th colspan="2" rowspan="2">競輪場<br><span>クラス・車立て</span></th><th colspan="5">1着選手の並び位置比率</th></tr>
+                <tr><th>先頭</th><th>2番手</th><th>3番手</th><th>4番手<br>以降</th><th>単騎</th></tr>
+                <tr><td rowspan="5" class="bkname">防<br>府</td><td><span>S級戦・9車立て</span></td><td>51.5%</td><td>44.5%</td><td>1.2%</td><td>0.0%</td><td>2.9%</td></tr>
+                <tr><td><span>S級戦・7車立て</span></td><td>48.9%</td><td>43.6%</td><td>2.2%</td><td>0.2%</td><td>5.1%</td></tr>
+                <tr><td><span>A12班戦・7車立て</span></td><td>60.2%</td><td>33.8%</td><td>1.7%</td><td>0.1%</td><td>4.1%</td></tr>
+                <tr><td><span>チャレンジ・7車立て</span></td><td>69.4%</td><td>25.1%</td><td>1.0%</td><td>0.5%</td><td>4.0%</td></tr>
+                <tr><td><a href="#class_average4" class="to_footer">クラス平均値</a></td><td>59.1%</td><td>34.9%</td><td>1.6%</td><td>0.2%</td><td>4.2%</td></tr>
+                <tr><td colspan="2">33バンク平均</td><td>58.5%</td><td>34.8%</td><td>2.3%</td><td>0.1%</td><td>4.3%</td></tr>
+                <tr><td colspan="2">全場平均値</td><td>55.0%</td><td>38.0%</td><td>3.0%</td><td>0.1%</td><td>3.9%</td></tr>
+            </table>
+
+            <table class="bk3-tp6b colptn35-3" style = "display:none">
+                <caption>2着選手の予想並び上の位置 <span>（2020年10月～2025年9月）</span></caption>
+                <tr><th colspan="2" rowspan="2">競輪場<br><span>クラス・車立て</span></th><th colspan="5">2着選手の並び位置比率</th></tr>
+                <tr><th>先頭</th><th>2番手</th><th>3番手</th><th>4番手<br>以降</th><th>単騎</th></tr>
+                <tr><td rowspan="5" class="bkname">防<br>府</td><td><span>S級戦・9車立て</span></td><td>36.8%</td><td>53.2%</td><td>8.8%</td><td>0.0%</td><td>1.2%</td></tr>
+                <tr><td><span>S級戦・7車立て</span></td><td>40.2%</td><td>46.0%</td><td>9.7%</td><td>0.2%</td><td>3.9%</td></tr>
+                <tr><td><span>A12班戦・7車立て</span></td><td>39.0%</td><td>49.7%</td><td>7.5%</td><td>0.2%</td><td>3.6%</td></tr>
+                <tr><td><span>チャレンジ・7車立て</span></td><td>36.2%</td><td>51.6%</td><td>7.4%</td><td>0.7%</td><td>4.0%</td></tr>
+                <tr><td><a href="#class_average4" class="to_footer">クラス平均値</a></td><td>38.4%</td><td>49.7%</td><td>8.1%</td><td>0.3%</td><td>3.5%</td></tr>
+                <tr><td colspan="2">33バンク平均</td><td>38.6%</td><td>48.6%</td><td>8.1%</td><td>0.2%</td><td>4.5%</td></tr>
+                <tr><td colspan="2">全場平均値</td><td>39.3%</td><td>46.6%</td><td>9.2%</td><td>0.3%</td><td>4.6%</td></tr>
+            </table>
+        </div>
+        <div class = "table_add">
+            <p>※予想並びにおけるライン上の位置を以下の5種類に定義↓<br>「先頭(2車以上のラインの先頭)」「2番手」「3番手」「4番手以降」「単騎」<br>（2番手が競りの場合は、両方の選手を「2番手」と定義）</p>
+        </div>
+
+        <section class = "dr_tohyama_inserting">
+            <div class = "dr_tohyama_textbox"  name = "section_6">
+                <div>
+                    <p>1着選手の並び位置は、33バンクではライン先頭の比率が高く、2番手・3番手は低くなる傾向があるんじゃ。</p>
+                    <p>防府もその特徴が強く、<span style = "background:yellow">ライン先頭の比率は59.1%と全場平均（55.0%）を大きく上回り、33バンクの中でも上位</span>じゃな。その分、2番手と3番手はいずれも全場平均を下回っておる。</p>
+                    <p><span style = "background:yellow">先頭選手の押し切りがかなり決まりやすい競輪場</span>と言えるのぉ。</p>
+                </div>
+                <div style = "display:none;">
+                    <p>2着選手については、33バンクでは逆にライン2番手の比率が高く、先頭や3番手は低くなる傾向じゃ。</p>
+                    <p>防府でも<span style = "background:yellow">ライン2番手の比率は49.7%と全場平均（46.6%）を上回り、33バンクの中でも上位</span>の数字になっておる。その結果、先頭・3番手・単騎はいずれも全場平均を下回るんじゃな。</p>
+                    <p><span style = "background:yellow">2番手選手がしっかりと2着に流れ込みやすい競輪場</span>ということじゃ。</p>
+                </div>
+            </div>
+            <img src = "/images/tohyama/tohyama_article_2024/doctor.png" class = "dr_tohyama_general"></img>
+        </section>
+    </section>
+
+    <section class = "main_section">
+        <h2 class = "outline">9. 防府競輪場の特徴</h2>
+        <hr>
+        <section class = "dr_tohyama_inserting">
+            <div class = "dr_tohyama_textbox">
+                <div>
+                    <ul class = "tohyama_list tohyama_list--summary">
+                        <li>400バンクと比べれば直線は短くカントはきついが、33バンクとしては標準的なバンク</li>
+                        <li>本場開催の3分の2をモーニングが占め、残りの3分の1は昼間開催。ナイター・ミッドナイトは未実施</li>
+                        <li>瀬戸内海沿岸に位置し、雨レース率は平均的で季節的には夏に雨が多い。風は年間を通して弱い</li>
+                        <li>決まり手は400バンクと比べると1着は逃げ・捲りの比率が高く、2着はマークの比率が高い。33バンクとしては平均的</li>
+                        <li>平均上がりタイムは33バンク7場中2位。ドームの前橋競輪場を除けば実質最上位で、33バンクでは高速寄り</li>
+                        <li>2車単・3連単とも配当中央値が全場平均より低い。33バンク特有の傾向が防府競輪場にも見られる</li>
+                        <li>スジ車券率は全国でも前橋競輪場に次いで2番目に高い。力車券率は全場平均とほぼ同程度</li>
+                        <li>1着はライン先頭選手の比率が高く、2着は2番手選手が流れ込みやすいという33バンク特有の傾向が強い</li>
+                    </ul>
+                    <br>
+                    <p>...以上が、防府競輪場の特徴じゃ！</p>
+                </div>
+                <img src = "/images/tohyama/tohyama_article_2024/doctor.png" class = "dr_tohyama_general"></img>
+            </section>
+        </section>
+
+    <section class = "main_section"  id = "class_average">
+        <h3 class = "outline">クラス平均値について</h3>
+        <hr>
+            <div class = "trans_section"><button class = "footer_button" id = "class_average1"><a href = "#class_average1_">決まり手データ</a></button><button class = "footer_button" id = "class_average2"><a href = "#class_average2_">上がりタイム</a></button><button class = "footer_button" id = "class_average3"><a href = "#class_average3_">2車単3連単配当</a></button></div>
+            <div class = "trans_section"><button class = "footer_button" id = "class_average4"><a href = "#class_average4_">スジ車券率力車券率</a></button><button class = "footer_button" id = "class_average5"><a href = "#class_average5_">1着2着選手ライン位置</a></button></div>
+            <p>クラス平均値は、次の比率で加重平均を取った値じゃ。</p>
+                <table class = "tbl-average">
+                    <tr><th>クラス</th><td>S級戦<br>9車立</td><td>S級戦<br>7車立</td><td>A12班戦<br>7車立</td><td class="challenge">チャレンジ<br>7車立</td><td>ガールズ<br>7車立</td></tr>
+                    <tr><th>比率</th><td>8.6</td><td>19.5</td><td>44.3</td><td>20.5</td><td>7.1</td></tr>
+                </table>
+            <p>この比率は、集計期間（2020年10月～2025年9月）に全競輪場で行われたレース数の比率である。</p>
+            <p>個々の競輪場のレース比率はこの値とは違うのじゃが、公平な比較とするために、全競輪場でこの比率で加重平均した値をその競輪場のクラス平均値（代表値）としておる。</p>
+        <hr>
+    </section>
+
+    <section class = "to_other_articles">
+        <p style = "text-align:left;"><a href = "https://gamboo.jp/pages/?tid=tohyama_bank_87" style = "color:inherit;text-decoration:underline;">◀前回「#87 熊本競輪場」</a></p>
+    </section>
+    <section class = "article_end">
+        <div>
+            <a href = "https://gamboo.jp/pages/?tid=tohyama_bank_LP"><p>競輪場データ集トップに戻る</p></a>
+        </div>
+    </section>
+    </section>
+
+    <footer class = "footer_section"><p>Copyright © NIPPON TOTOR CO.,LTD. All Rights Reserved.</p></footer>
+
+    <script src = "/js/tohyama/script.js?=20240418"></script>
+
+    </body>
+</html>

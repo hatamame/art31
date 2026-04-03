@@ -1,0 +1,1189 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.body_background {
+  background-image: linear-gradient(
+      0deg,
+      transparent calc(100% - 1px),
+      #a9a9a9 calc(100% - 1px)
+    ),
+    linear-gradient(
+      90deg,
+      transparent calc(100% - 1px),
+      #a9a9a9 calc(100% - 1px)
+    );
+  background-size: 25px 25px;
+  background-repeat: repeat;
+  background-position: center center;
+}
+
+.header {
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3em;
+  background: black;
+  z-index: 3;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 1em;
+}
+
+.hamburger {
+  position: relative;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  margin-top: 0.8em;
+}
+
+.hamburger-bar {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-bar:nth-child(1) {
+  top: 0;
+}
+
+.hamburger-bar:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-bar:nth-child(3) {
+  bottom: 0;
+}
+
+.hamburger.active .hamburger-bar:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.hamburger.active .hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .hamburger-bar:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+.gamboo_logo {
+  cursor: pointer;
+  margin: 0.4em;
+  height: 2em;
+  width: auto;
+}
+
+.menu_off {
+  margin-top: 10vw;
+  background: black;
+  position: fixed;
+  inset: 0;
+  opacity: 0%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.menu_on {
+  background: black;
+  position: fixed;
+  inset: 0;
+  opacity: 100%;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.menu_on div {
+  margin-top: 10em;
+  text-align: center;
+}
+
+.menu_on div a {
+  text-decoration: none;
+}
+
+.menu_on div p {
+  font-size: 150%;
+  font-weight: bold;
+  line-height: 1.5em;
+  color: white;
+}
+
+.main_title_logo img {
+  width: auto;
+  height: 25.5vw;
+}
+
+.wrapper {
+  background: white;
+  max-width: 60em;
+  height: auto;
+  margin: -3.5em auto;
+  padding-top: 7.5em;
+  padding-bottom: 7.5em;
+}
+
+.main_section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.to_other_articles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  text-align: left;
+  margin: 0 -3rem;
+}
+
+.margin_adjustment {
+  margin: 0.5em auto;
+}
+
+.main_section hr {
+  width: 45em;
+  border-top: 2px dashed black;
+}
+
+.general_image {
+  width: 30em;
+  height: auto;
+}
+
+.title {
+  max-width: 23em;
+  width: 23em;
+  font-weight: bold;
+  font-size: 200%;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.release_date {
+  font-size: 50%;
+  color: gray;
+  margin: auto 1em;
+}
+.main_section p {
+  margin: 1em auto;
+  max-width: 45em;
+  width: 45em;
+}
+
+.underscore_1 {
+  background: yellow;
+  font-weight: bold;
+}
+
+.underscore_2 {
+  text-decoration: underline;
+}
+
+.annotation {
+  font-size: 70%;
+  vertical-align: 20%;
+  padding-left: 0.2vw;
+}
+
+.annotation_explanation {
+  max-width: 45em;
+  width: 45em;
+  height: auto;
+  margin: 0.5em auto;
+  background: #eaece6;
+}
+
+.annotation_explanation p.first {
+  max-width: 60em;
+  width: 60em;
+  font-size: 70%;
+  margin: 0.5em 0.5em;
+  line-height: 1.5em;
+}
+
+.annotation_explanation p {
+  max-width: 60em;
+  width: 60em;
+  font-size: 70%;
+  margin: 0.5em auto;
+  line-height: 1.5em;
+}
+
+.outline {
+  max-width: 26em;
+  width: 26em;
+  font-weight: bold;
+  font-size: 175%;
+  padding-top: 1em;
+  margin-bottom: -5px;
+}
+
+.sub_outline {
+  max-width: 39em;
+  width: 39em;
+  font-weight: bold;
+  font-size: 115%;
+  margin: 0em auto;
+}
+
+.sub_outline_2 {
+  max-width: 39em;
+  width: 39em;
+  font-weight: bold;
+  font-size: 115%;
+  margin: 0em auto;
+}
+
+/*博士画像と吹き出し周り*/
+.dr_tohyama_inserting {
+  display: flex;
+  margin-top: 0.5vw;
+  margin-bottom: 2.5vw;
+}
+
+.dr_tohyama_general {
+  width: auto;
+  height: 8.5em;
+  margin: 0.6em;
+}
+
+.dr_tohyama_textbox {
+  background: white;
+  border: 2px solid;
+  max-width: 35em;
+  width: 35em;
+  height: auto;
+  border-radius: 1.5em;
+  margin: 0.6em;
+  padding: 2px 0;
+  text-align: center;
+}
+
+.dr_tohyama_textbox p {
+  text-align: left;
+  font-size: 1em;
+  margin: 1.5em auto;
+  line-height: 1.3em;
+  max-width: 33.5em;
+  width: 33.5em;
+}
+
+.dr_tohyama_textbox p span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.tohyama_list {
+  display: table;
+  list-style: square;
+}
+
+.tohyama_list li {
+  text-align: left;
+  margin: 0.1em auto;
+  line-height: 1.25em;
+  max-width: 30.5em;
+}
+
+.tohyama_list--summary {
+  font-weight: bold;
+}
+
+.tohyama_list--summary li {
+  padding-block: 10px;
+}
+
+/*表周り*/
+.table-wrap {
+  width: 45em;
+  height: auto;
+  overflow-x: scroll;
+}
+
+.table-wrap_sp {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  white-space: nowrap;
+  margin: 1.5rem auto;
+}
+caption {
+  font-weight: bold;
+  margin: 0 0 0.6em 0.4em;
+  text-align: left;
+}
+th {
+  background-color: #eaece6;
+  font-weight: normal;
+}
+th,
+td {
+  white-space: nowrap;
+  text-align: center;
+  padding: 0.25em 0.725em;
+  border: 1px solid gray;
+}
+
+.article_end {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.article_end div {
+  border: none;
+  border-radius: 10px;
+  background: black;
+  width: 16.5em;
+  height: 3.5em;
+  margin: 0.5em auto;
+  margin-bottom: -2em;
+  cursor: pointer;
+}
+
+.article_end div p {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0.5em auto;
+}
+
+.article_end div a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.footer_section {
+  background: black;
+  text-align: center;
+  padding: 3em 6em;
+  bottom: 0;
+  margin-top: 1.5em;
+}
+
+.footer_section p {
+  font-weight: bold;
+  color: white;
+}
+
+.intro_data {
+  font-weight: bold;
+  text-align: left;
+}
+
+.intro_data p {
+  margin: 0 auto;
+}
+
+.intro_data p small {
+  margin-left: 0.5rem;
+  font-weight: normal;
+  font-size: 75%;
+}
+
+.trans_section {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.trans_button {
+  display: center;
+  background: gray;
+  border-radius: 20px;
+  border: none;
+  margin: 0.5em;
+  width: 7em;
+  height: 3.5em;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.trans_button,
+.footer_button a,
+.article_end div {
+  transition: all 0.3s ease;
+}
+
+.trans_button:hover,
+.footer_button a:hover,
+.article_end div:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.foot_note {
+  margin-bottom: 1.5em;
+}
+
+:root {
+  /* ---- 表(table)の色 ---- */
+  --th-col: #778ca3; /* グレー */
+  --part-col: #e9faf9; /* 薄い水色 */
+  --total-col: #cdf4f0; /* 濃い水色 */
+  --wprt-col: #f9f8ea; /* 薄い黄 */
+  --whole-col: #f7f3b7; /* 濃い黄 */
+  --obj1-col: #caffbf; /* 明るい緑 */
+  --obj2-col: #eaffe6; /* 明るい緑(薄) */
+  --wide-col: #fdffbb; /* 明るい黄色 */
+  --wid2-col: #feffe2; /* 明るい黄色(薄) */
+}
+
+a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 5px;
+  line-height: 1.3;
+}
+caption {
+  font-weight: bold;
+  margin: 0 0 5px 3px;
+  text-align: left;
+}
+tr {
+  background-color: var(--part-col); /* ベースは 薄い水色 */
+}
+tr.cgp {
+  background-color: var(--total-col);
+} /* 濃い水色 tp8で使用 */
+tr:last-child td {
+  border-bottom: solid 1px var(--th-col); /* 表の下部はグレーの線 */
+}
+th {
+  white-space: nowrap;
+  padding: 4px;
+  text-align: center;
+  border: solid 1px #ffffff;
+  background-color: var(--th-col);
+  color: #ffffff;
+  font-weight: normal;
+}
+td {
+  white-space: nowrap;
+  padding: 4px;
+  text-align: center;
+  border: solid 1px #ffffff;
+}
+
+table caption {
+  font-weight: bold;
+  margin: 0 0 2px 3px;
+  text-align: left;
+}
+table caption span {
+  font-weight: normal;
+  font-size: 86%;
+}
+
+.table_add {
+  font-size: 75%;
+}
+
+.table_add_35_6 {
+  font-size: 75%;
+}
+
+.note {
+  font-size: 10% !important;
+  vertical-align: top;
+}
+
+table + p {
+  margin-top: 18px;
+}
+table + p.add_note {
+  margin-top: 0px;
+}
+
+table.bk1-tp1 tr:nth-child(1) th {
+  min-width: 6.5em;
+}
+.bk1-tp1 th span {
+  font-size: 96%;
+}
+.bk1-tp1 td:nth-last-child(2) {
+  background-color: var(--total-col);
+}
+.bk1-tp1 td:nth-last-child(1) {
+  background-color: var(--part-col);
+}
+
+table.bk1-tp2 th {
+  min-width: 4em;
+}
+.bk1-tp2 th span {
+  font-size: 96%;
+}
+.bk1-tp2 tr:nth-last-child(2) td {
+  background-color: var(--total-col);
+}
+.bk1-tp2 tr:nth-last-child(1) td {
+  background-color: var(--part-col);
+}
+
+.clsn {
+  font-size: 96%;
+  background-color: var(--obj2-col);
+}
+
+.bkname {
+  background-color: var(--obj1-col);
+  padding: 0.5rem;
+}
+
+table.bk1-tp3 th {
+  min-width: 3em;
+}
+.bk1-tp3 tr:nth-child(-n + 2) th span {
+  font-size: 86%;
+}
+.bk1-tp3 th.detail {
+  font-size: 86%;
+  line-height: 0.95;
+  padding-top: 3px;
+}
+.bk1-tp3 tr:nth-last-child(2) {
+  background-color: var(--obj1-col);
+} /* 黄緑 */
+.bk1-tp3 tr:nth-last-child(1) {
+  background-color: var(--wide-col);
+} /* 黄 */
+.bk1-tp3 tr:nth-last-child(2) td:nth-child(n + 3):nth-child(-n + 6) {
+  background-color: var(--obj2-col);
+} /* 薄い黄緑 */
+.bk1-tp3 tr:nth-last-child(1) td:nth-child(n + 3):nth-child(-n + 6) {
+  background-color: var(--wid2-col);
+} /* 薄い 黄  */
+
+.bk1-tp4 tr:nth-last-child(2) td:nth-child(1) {
+  background-color: var(--obj1-col);
+}
+.bk1-tp4 tr:nth-last-child(1) td:nth-child(1) {
+  background-color: var(--wide-col);
+}
+.bk1-tp4 th:nth-child(1) {
+  width: 200px;
+}
+.bk1-tp4 th:nth-child(2) {
+  width: 300px;
+}
+
+.bk1-tp4 td:last-child span {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 72%;
+  line-height: 1.05;
+  height: 2.3em;
+  padding-top: 1px;
+  padding-bottom: 0px;
+  vertical-align: middle;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+.bk1-tp4 td:last-child span:last-child {
+  border-right: 1px solid black;
+}
+
+.bk1-tp4 td span.ngc {
+  background-color: #a0c4ff;
+}
+.bk1-tp4 td span.mkc {
+  background-color: #ffadad;
+}
+.bk1-tp4 td span.ssc {
+  background-color: #ffd6a5;
+}
+.bk1-tp4 td span.kkc {
+  background-color: #caffbf;
+}
+.bk1-tp4 td span.ccc {
+  background-color: #ffffff;
+}
+.bk1-tp4 td:nth-child(n + 2) {
+  padding: 2px;
+}
+
+table.bk1-tp5 th {
+  min-width: 4.2em;
+}
+.bk1-tp5 th span {
+  font-size: 96%;
+}
+.bk1-tp5 th {
+  line-height: 1.2;
+}
+.bk1-tp5 tr:nth-last-child(2) {
+  background-color: var(--obj2-col);
+} /* 薄い黄緑 */
+.bk1-tp5 tr:nth-last-child(1) {
+  background-color: var(--wid2-col);
+} /* 薄い黄 */
+.bk1-tp5 tr:nth-last-child(2) td:nth-child(-n + 2) {
+  background-color: var(--obj1-col);
+} /* 黄緑 */
+.bk1-tp5 tr:nth-last-child(1) td:nth-child(-n + 2) {
+  background-color: var(--wide-col);
+} /*  黄  */
+
+.bk1-tp10 {
+  width: 400px;
+}
+
+.bk1-tp6 td {
+  padding: 2px 6px;
+}
+td.bkname {
+  width: 1.2em;
+}
+.bk1-tp6 td span {
+  font-size: 96%;
+}
+
+.bkname {
+  background-color: var(--obj1-col);
+}
+.bk1-tp6 tr:nth-last-child(2) td {
+  background-color: var(--obj1-col);
+}
+.bk1-tp6 tr:last-child td {
+  background-color: var(--wide-col);
+}
+
+table.inlist {
+  padding: 0;
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+}
+table.inlist th,
+table.inlist td {
+  font-size: 13px;
+  font-weight: normal;
+  padding: 3px;
+  text-align: center;
+  border: solid 1px gray;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.1;
+  min-width: 4em;
+}
+table.inlist th {
+  background-color: #eaece6;
+}
+table.inlist td.challenge {
+  font-size: 90%;
+}
+
+table.tbl-average {
+  display: flex;
+  justify-content: center;
+}
+
+table.tbl-average th {
+  background-color: #778ca3;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+table.tbl-average td {
+  background-color: #ffffff;
+  color: #000;
+  font-weight: normal;
+}
+
+table.tbl-average th,
+table.tbl-average td {
+  white-space: nowrap;
+  text-align: center;
+  padding: 2px 6px;
+  border: solid 0.1px #666666;
+}
+
+table.g-kimarite {
+  font-size: 14px;
+}
+
+table.g-kimarite td:nth-child(1) {
+  line-height: 120%;
+}
+table.g-kimarite td:nth-child(n + 2) {
+  width: 210px;
+}
+
+table.g-kimarite td:nth-child(n + 2):nth-child(-n + 4) span {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 80%;
+  line-height: 110%;
+  height: 2.7em;
+  padding-top: 2px;
+  vertical-align: middle;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+table.g-kimarite td:nth-child(n + 2) span:nth-child(1) {
+  background-color: #a0c4ff;
+}
+table.g-kimarite td:nth-child(n + 2) span:nth-child(2) {
+  background-color: #ffadad;
+}
+table.g-kimarite td:nth-child(n + 2) span:nth-child(3) {
+  background-color: #ffd6a5;
+}
+table.g-kimarite td:nth-child(n + 2) span:nth-child(4) {
+  background-color: #caffbf;
+  border-right: 1px solid black;
+}
+
+.footer_button {
+  display: center;
+  font-size: 40%;
+  background: black;
+  border-radius: 10px;
+  border: none;
+  margin: 0.5em;
+  width: auto;
+  height: 3em;
+  padding: 1px 4.5px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer_button a {
+  text-decoration: none;
+  color: white;
+}
+
+.to_footer {
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+/* -------------------------------------- */
+/*    bank_type3.css         2024.08.19   */
+/* -------------------------------------- */
+/* -- bank_type2.css と同じ部分 --------- */
+/* -- aside の修飾 -- */
+aside.amemo:before {
+  position: absolute;
+  top: -9px;
+  left: 15px;
+  background-color: #f8f8f8;
+  content: "< memo >";
+}
+aside.amemo content {
+  position: absolute;
+  top: -9px;
+  left: 35px;
+  background-color: #f8f8f8;
+}
+/* ---------------------- */
+.sml86f {
+  font-size: 86%;
+}
+.indent1 {
+  text-indent: -1.4em;
+  padding-left: 1.4em;
+}
+/* ---------------------- */
+table + p.add_note {
+  margin-bottom: 2px;
+} /* add_note が2行連続した場合は、行間を狭めに */
+p.add_note + p.add_note {
+  margin-top: 2px;
+  margin-bottom: 2px;
+} /*       〃                                   */
+
+/* ---------------------------------------- */
+/* -- 以下は bank_type3.css のオリジナル -- */
+/* bk1-tp1 の33バンク版 */
+.bk3-tp1b tr:nth-child(1) th {
+  min-width: 6.5em;
+}
+.bk3-tp1b td:nth-last-child(3) {
+  background-color: var(--total-col);
+}
+.bk3-tp1b td:nth-last-child(-n + 2) {
+  background-color: var(--part-col);
+}
+
+/* bk1-tp6 の33バンク版 */
+.bk3-tp6b td {
+  padding: 2px 6px;
+}
+.bk3-tp6b td span {
+  font-size: 96%;
+}
+.bk3-tp6b tr:nth-last-child(3) td {
+  background-color: var(--obj1-col);
+}
+.bk3-tp6b tr:nth-child(7) td {
+  background-color: var(--obj1-col);
+}
+.bk3-tp6b tr:nth-last-child(-n + 2) td {
+  background-color: var(--wide-col);
+}
+
+/* 33・500バンク用 bk1-tp4 への追加 */
+.bk3-tp4b tr:nth-last-child(3) td:nth-child(1) {
+  background-color: var(--obj1-col);
+} /* 2025.9.20mody obj2-col → obj1-col */
+.bk3-tp4b tr:nth-last-child(2) td:nth-child(1) {
+  background-color: var(--wide-col);
+}
+
+/* 脚注のバンク長別のスジ車券率・力車券率 inlist への追加 */
+.inlist-add1 td:nth-child(1) {
+  background-color: var(--parl-col);
+}
+.inlist-add1 tr:nth-child(5) td {
+  background-color: var(--wid2-col);
+}
+
+/* markerY 以外のアンダーライン */
+.xudlr1 {
+  text-decoration: solid underline 1px red;
+  text-underline-offset: 0.2em;
+} /* art37等をベースに新規 */
+.xudlr2 {
+  text-decoration: solid underline 2px red;
+  text-underline-offset: 0.2em;
+} /* 新規 */
+.xudlg1 {
+  text-decoration: solid underline 1px green;
+  text-underline-offset: 0.2em;
+} /* 新規 */
+.xudlg2 {
+  text-decoration: solid underline 2px green;
+  text-underline-offset: 0.2em;
+} /* 新規 */
+.xudlh1 {
+  text-decoration: solid underline 1px #4d4d4d;
+  text-underline-offset: 0.2em;
+} /* 新規 */
+.xudlh2 {
+  text-decoration: solid underline 2px #4d4d4d;
+  text-underline-offset: 0.2em;
+} /* 新規 */
+
+/* th等の背景色が暗い部分でも sup4 や リンク */
+a.white-text {
+  color: white;
+}
+.white-text {
+  color: white;
+}
+
+/*    以上は bank_type3.css と同じ               */
+/* --------------------------------------------- */
+/*   以下は bank_type3.css に対して 追加した項目 */
+
+/* 33・500バンク用 bk1-tp6 への追加 */
+.bk3-tp6c tr:nth-last-child(3) td {
+  background-color: var(--obj1-col);
+} /*  2025.9.20mody obj2-col → obj1-col */
+.bk3-tp6c tr:nth-last-child(2) td {
+  background-color: var(--wide-col);
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    height: 10vw;
+    z-index: 2;
+    /*width: 100%; /* ヘッダー幅を100%に */
+    /*box-sizing: border-box; /* padding/borderを含めた幅計算に */
+  }
+
+  .container {
+    margin: 0; /* 左右のautoマージンをリセット */
+    padding: 0 1.5em; /* 左右にパディングを追加 */
+    width: 100%; /* 幅を100%にする */
+    box-sizing: border-box; /* paddingを含めた幅計算にする */
+    display: flex; /* flexboxを有効化 */
+    justify-content: space-between; /* 要素を両端に配置 */
+    align-items: center; /* 垂直方向中央揃え */
+    height: 100%; /* 親要素(header)の高さいっぱいに広げる */
+  }
+
+  .hamburger {
+    margin-top: 0.8vh;
+    width: 7.5vw;
+    height: 3vh;
+  }
+
+  .gamboo_logo {
+    margin: 0.8vh;
+    height: 3vh;
+  }
+
+  .menu_on {
+    margin-top: 10vw;
+  }
+
+  .menu_on div {
+    margin-top: 25vw;
+  }
+
+  .menu_on div p {
+    font-size: 8.5vw;
+    margin: -3rem auto 6rem auto;
+    max-width: 70vw;
+  }
+
+  .main_title_logo {
+    padding: 25px;
+    margin-top: 10vw;
+  }
+
+  .wrapper {
+    /*padding-top: 30px;*/
+    padding-top: calc(10vw + 20px);
+  }
+
+  .main_section {
+    margin-bottom: 5px;
+  }
+
+  .main_section hr {
+    width: 90vw;
+  }
+
+  .general_image {
+    width: 85vw;
+  }
+
+  .title {
+    max-width: 85vw;
+    width: 85vw;
+    font-size: 195%;
+    margin: 6.5vw auto;
+    line-height: 9.5vw;
+    padding-top: calc(10vw + 20px);
+  }
+
+  .release_date {
+    font-size: 40%;
+    margin: auto 1vw;
+  }
+
+  .main_section p {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    max-width: 90vw;
+    width: 90vw;
+  }
+
+  .annotation_explanation {
+    max-width: 90vw;
+    width: 90vw;
+    margin: 1.5vh auto;
+    text-align: justify;
+  }
+
+  .annotation_explanation p.first {
+    max-width: 85vw;
+    width: 85vw;
+    margin: 1vh 1vw;
+    line-height: 2.5vh;
+  }
+
+  .annotation_explanation p {
+    max-width: 85vw;
+    width: 85vw;
+    font-size: calc(70% + 0.25vw);
+    margin: 1vh auto;
+    line-height: 2.5vh;
+  }
+
+  .outline {
+    max-width: 90vw;
+    width: 90vw;
+    padding-top: 5px;
+  }
+
+  .sub_outline {
+    max-width: 90vw;
+    width: 90vw;
+    margin-top: 0.5vw;
+    margin-bottom: -0.5vw;
+  }
+
+  .sub_outline_2 {
+    max-width: 90vw;
+    width: 90vw;
+    margin-top: 5vw;
+  }
+
+  .dr_tohyama_inserting {
+    margin: 5vw;
+  }
+
+  .dr_tohyama_general {
+    width: 75.15px;
+    height: 86.85px;
+    margin: 0.6vw;
+  }
+
+  .dr_tohyama_textbox {
+    max-width: 70vw;
+    width: 70vw;
+    margin: 0.6vw;
+  }
+
+  .dr_tohyama_textbox p {
+    font-size: 3.5vw;
+    margin: 4.5vw 2.5vw;
+    line-height: 4.8vw;
+    max-width: 65vw;
+    width: 70vw;
+  }
+
+  .tohyama_list {
+    padding-inline: 2.5rem;
+    font-size: calc(65% + 1.2vw);
+  }
+
+  .tohyama_list li {
+    text-align: justify;
+    line-height: 1.05em;
+    max-width: 55vw;
+  }
+
+  .table-wrap_sp {
+    width: 90vw;
+    max-width: 90vw;
+    overflow-x: scroll;
+    margin: 0.5rem auto;
+  }
+
+  .to_other_articles {
+    /* display: flex; は維持 */
+    justify-content: space-around;
+    /* align-items: center; は維持 */
+    flex-direction: row; /* 横並びは維持 */
+    text-align: left;
+    margin-left: 0; /* ネガティブマージンをリセット */
+    margin-right: 0; /* ネガティブマージンをリセット */
+    width: 100%; /* 親要素いっぱいに広げる */
+    padding: 0 1em; /* 左右に少しパディングを追加 */
+    box-sizing: border-box;
+  }
+
+  table {
+    margin-top: 5vw;
+    font-size: 90%;
+  }
+
+  caption {
+    margin: 0 0 1.5vw 1vw;
+  }
+
+  th,
+  td {
+    padding: 0.6vw 1vw;
+  }
+
+  .article_end {
+    margin-top: -15px;
+    margin-bottom: -25px;
+  }
+
+  .article_end div {
+    width: 65vw;
+    height: 15vw;
+    margin: 10vw;
+  }
+
+  .article_end div p {
+    font-size: 6vw;
+    margin: 3vw auto;
+  }
+
+  .footer_section {
+    padding: 1em 3.5em;
+  }
+
+  .foot_note {
+    font-size: 85%;
+    margin-bottom: 3.5em;
+  }
+
+  .table_add {
+    margin-top: -0.5em;
+  }
+
+  .table_add_35_6 {
+    font-size: 75% !important;
+    margin-top: -0.5em;
+  }
+
+  table.inlist th,
+  table.inlist td {
+    font-size: 95%;
+  }
+
+  table.tbl-average {
+    font-size: 78%;
+  }
+
+  table.tbl-average th,
+  table.tbl-average td {
+    border: solid 1.5px #000000;
+  }
+}

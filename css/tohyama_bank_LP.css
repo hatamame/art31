@@ -1,0 +1,1019 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.body_background {
+  background-image: linear-gradient(
+      0deg,
+      transparent calc(100% - 1px),
+      #a9a9a9 calc(100% - 1px)
+    ),
+    linear-gradient(
+      90deg,
+      transparent calc(100% - 1px),
+      #a9a9a9 calc(100% - 1px)
+    );
+  background-size: 25px 25px;
+  background-repeat: repeat;
+  background-position: center center;
+}
+
+.header {
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3em;
+  background: black;
+  z-index: 3;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 1em;
+}
+
+.hamburger {
+  position: relative;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  margin-top: 0.8em;
+}
+
+.hamburger-bar {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-bar:nth-child(1) {
+  top: 0;
+}
+
+.hamburger-bar:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-bar:nth-child(3) {
+  bottom: 0;
+}
+
+.hamburger.active .hamburger-bar:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.hamburger.active .hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .hamburger-bar:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+.gamboo_logo {
+  cursor: pointer;
+  margin: 0.4em;
+  height: 2em;
+  width: auto;
+}
+
+.menu_off {
+  margin-top: 10vw;
+  background: black;
+  position: fixed;
+  inset: 0;
+  opacity: 0%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.menu_on {
+  background: black;
+  position: fixed;
+  inset: 0;
+  opacity: 100%;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.menu_on div {
+  margin-top: 10em;
+  text-align: center;
+}
+
+.menu_on div a {
+  text-decoration: none;
+}
+
+.menu_on div p {
+  font-size: 150%;
+  font-weight: bold;
+  line-height: 1.5em;
+  color: white;
+}
+
+.main_title_logo img {
+  width: auto;
+  height: 25.5vw;
+}
+
+.wrapper {
+  background: white;
+  max-width: 60em;
+  height: auto;
+  margin: -3.5em auto;
+  padding-top: 7.5em;
+  padding-bottom: 7.5em;
+}
+
+.main_section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.margin_adjustment {
+  margin: 0.5em auto;
+}
+
+.main_section hr {
+  width: 45em;
+  border-top: 2px dashed black;
+}
+
+.general_image {
+  width: 30em;
+  height: auto;
+}
+
+.title {
+  max-width: 23em;
+  width: 23em;
+  font-weight: bold;
+  font-size: 200%;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.release_date {
+  font-size: 50%;
+  color: gray;
+  margin: auto 1em;
+}
+.main_section p {
+  margin: 1em auto;
+  max-width: 45em;
+  width: 45em;
+}
+
+.underscore_1 {
+  background: yellow;
+  font-weight: bold;
+}
+
+.underscore_2 {
+  text-decoration: underline;
+}
+
+.annotation {
+  font-size: 70%;
+  vertical-align: 20%;
+  padding-left: 0.2vw;
+}
+
+.annotation_explanation {
+  max-width: 45em;
+  width: 45em;
+  height: auto;
+  margin: 0.5em auto;
+  background: #eaece6;
+}
+
+.annotation_explanation p.first {
+  max-width: 60em;
+  width: 60em;
+  font-size: 70%;
+  margin: 0.5em 0.5em;
+  line-height: 1.5em;
+}
+
+.annotation_explanation p {
+  max-width: 60em;
+  width: 60em;
+  font-size: 70%;
+  margin: 0.5em auto;
+  line-height: 1.5em;
+}
+
+.outline {
+  max-width: 26em;
+  width: 26em;
+  font-weight: bold;
+  font-size: 175%;
+  padding-top: 1em;
+  margin-bottom: -5px;
+}
+
+.sub_outline {
+  max-width: 39em;
+  width: 39em;
+  font-weight: bold;
+  font-size: 115%;
+  margin: 0em auto;
+}
+
+.sub_outline_2 {
+  max-width: 39em;
+  width: 39em;
+  font-weight: bold;
+  font-size: 115%;
+  margin: 0em auto;
+}
+
+/*博士画像と吹き出し周り*/
+.dr_tohyama_inserting {
+  display: flex;
+  margin-top: 0.5vw;
+  margin-bottom: 2.5vw;
+}
+
+.dr_tohyama_general {
+  width: auto;
+  height: 8.5em;
+  margin: 0.6em;
+}
+
+.dr_tohyama_textbox {
+  background: white;
+  border: 2px solid;
+  max-width: 35em;
+  width: 35em;
+  height: auto;
+  border-radius: 1.5em;
+  margin: 0.6em;
+  padding: 2px 0;
+  text-align: center;
+}
+
+.dr_tohyama_textbox p {
+  text-align: left;
+  font-size: 1em;
+  margin: 1.5em auto;
+  line-height: 1.3em;
+  max-width: 33.5em;
+  width: 33.5em;
+}
+
+.tohyama_list {
+  display: table;
+  list-style: square;
+}
+
+.tohyama_list li {
+  text-align: left;
+  margin: 0.1em auto;
+  line-height: 1.25em;
+  max-width: 30.5em;
+}
+
+/*表周り*/
+.table-wrap {
+  width: 45em;
+  height: auto;
+  overflow-x: scroll;
+}
+
+.table-wrap_sp {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  white-space: nowrap;
+  margin: 1.5rem auto;
+}
+caption {
+  font-weight: bold;
+  margin: 0 0 0.6em 0.4em;
+  text-align: left;
+}
+th {
+  background-color: #eaece6;
+  font-weight: normal;
+}
+th,
+td {
+  white-space: nowrap;
+  text-align: center;
+  padding: 0.25em 0.725em;
+  border: 1px solid gray;
+}
+
+.article_end {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.article_end div {
+  border: none;
+  border-radius: 10px;
+  background: black;
+  width: 16.5em;
+  height: 3.5em;
+  margin: 0.5em auto;
+  margin-bottom: -2em;
+  cursor: pointer;
+}
+
+.article_end div p {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0.5em auto;
+}
+
+.article_end div a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.footer_section {
+  background: black;
+  text-align: center;
+  padding: 3em 6em;
+  bottom: 0;
+  margin-top: 1.5em;
+}
+
+.footer_section p {
+  font-weight: bold;
+  color: white;
+}
+
+.intro_data {
+  font-weight: bold;
+  text-align: left;
+}
+
+.intro_data p {
+  margin: 0 auto;
+}
+
+.intro_data p small {
+  margin-left: 0.5rem;
+  font-weight: normal;
+  font-size: 75%;
+}
+
+.trans_section {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.trans_button {
+  display: center;
+  background: gray;
+  border-radius: 20px;
+  border: none;
+  margin: 0.5em;
+  width: 7em;
+  height: 3.5em;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.trans_button,
+.footer_button a,
+.article_end div {
+  transition: all 0.3s ease;
+}
+
+.trans_button:hover,
+.footer_button a:hover,
+.article_end div:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.foot_note {
+  margin-bottom: 1.5em;
+}
+
+/*-------------------------------------------------------*/
+.average td {
+  background-color: #fffecb !important;
+} /* 全場平均の背景色 */
+.average2 td {
+  background-color: #fffbe1 !important;
+} /* 33,400,500バンク平均の背景色 */ /*  2025.10.15 追加 */
+.blc3 {
+  background-color: #daede8;
+} /* 33バンクの背景色     */
+.blc4 {
+  background-color: #fdfaed;
+} /* 400バンクの背景色    */
+.blc5 {
+  background-color: #eaddd5;
+} /* 500バンクの背景色    */
+.dome {
+  background-color: #e7e7ee;
+} /* ドームバンクの背景色 */
+.average {
+  border-top: double 3px #666666;
+} /* 総計ラインの上部は2重線 */
+
+.markerY {
+  /* --- 黄色のマーカ   (ハイライト用) ----- */
+  text-decoration: underline; /* 下線 */
+  text-decoration-thickness: 0.5em; /* 線の太さ */
+  text-decoration-color: rgba(255, 228, 0, 0.5); /* 線の色 */
+  text-underline-offset: -0.2em; /* 線の位置。テキストに重なるようにやや上部にする */
+  text-decoration-skip-ink: none; /* 下線と文字列が重なる部分でも下線が省略されない（線が途切れない） */
+}
+.wst5 {
+  /* --- ワースト5 → ワースト3 --- */
+  background: linear-gradient(transparent 10%, #9ff5ff 75%);
+}
+.bst5 {
+  /* --- ベスト5 → ベスト3 --- */
+  background: linear-gradient(transparent 10%, #ffb2d8 75%);
+}
+
+/* --- 基本の表 --- */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 10px 0px 20px 8px;
+  margin: 5px;
+  line-height: 1.3;
+}
+caption {
+  font-weight: bold;
+  margin: 0 0 5px 3px;
+  text-align: left;
+}
+th {
+  background-color: #778ca3;
+  color: #ffffff;
+  font-weight: normal;
+}
+th,
+td {
+  white-space: nowrap;
+  text-align: center;
+  padding: 2px 6px;
+  border: solid 1px #666666;
+}
+
+.table_add {
+  font-size: 75%;
+}
+
+a {
+  font-weight: bold;
+  color: black;
+}
+
+/* ----- 表 バンクデータ ----- */
+table.tbl-tp1 caption span {
+  font-weight: normal;
+  font-size: 78%;
+  border: 1px solid gray;
+  padding: 2px 3px;
+}
+table.tbl-tp1 th {
+  line-height: 120%;
+}
+table.tbl-tp1 th span {
+  font-size: 78%;
+}
+
+table.tbl-tp1 td {
+  min-width: 3em;
+}
+table.tbl-tp1 td:nth-child(1) {
+  width: 5.8em;
+}
+
+table.tbl-tp1 td:nth-child(1) span {
+  font-size: 86%;
+}
+table.tbl-tp1 td:nth-child(1) {
+  text-align: left;
+}
+
+/* ----- 表 雨レース率・風レース率 ----- */
+table.tbl-tp3 th.detail {
+  font-size: 86%;
+  line-height: 0.95;
+  padding-top: 3px;
+}
+table.tbl-tp3 th span {
+  font-size: 86%;
+}
+table.tbl-tp3 td:nth-child(1) {
+  text-align: left;
+}
+table.tbl-tp3 td:nth-child(1) span:nth-child(1) {
+  font-size: 86%;
+}
+table.tbl-tp3 td:nth-child(1) span:nth-child(2) {
+  font-size: 78%;
+}
+
+/* ----- 表 決まり手 ----- */
+/*table.tbl-tp5{ min-width: 800px; }*/
+table.tbl-tp5 td:nth-child(1) {
+  text-align: left;
+  min-width: 4.5em;
+}
+table.tbl-tp5 td:nth-child(1) span:nth-child(1) {
+  font-size: 86%;
+}
+table.tbl-tp5 td:nth-child(1) span:nth-child(2) {
+  font-size: 78%;
+}
+
+table.tbl-tp5 td:nth-child(n + 2):nth-child(-n + 3) {
+  width: 300px;
+}
+table.tbl-tp5 td:nth-child(4) {
+  width: 280px;
+}
+
+table.tbl-tp5 td:nth-child(n + 2):nth-child(-n + 4) span {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 72%;
+  line-height: 105%;
+  height: 2.3em;
+  padding-top: 1px;
+  padding-bottom: 0px;
+  vertical-align: middle;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+table.tbl-tp5 td:nth-child(n + 2):nth-child(-n + 3) span:nth-child(1) {
+  background-color: #a0c4ff;
+}
+table.tbl-tp5 td:nth-child(n + 2):nth-child(-n + 3) span:nth-child(2) {
+  background-color: #ffadad;
+}
+table.tbl-tp5 td:nth-child(n + 2):nth-child(-n + 3) span:nth-child(3) {
+  background-color: #ffd6a5;
+}
+table.tbl-tp5 td:nth-child(n + 2):nth-child(-n + 3) span:nth-child(4) {
+  background-color: #caffbf;
+  border-right: 1px solid black;
+}
+
+table.tbl-tp5 td span.ngc {
+  background-color: #a0c4ff;
+}
+table.tbl-tp5 td span.mkc {
+  background-color: #ffadad;
+}
+table.tbl-tp5 td span.ssc {
+  background-color: #ffd6a5;
+}
+table.tbl-tp5 td span.kkc {
+  background-color: #caffbf;
+}
+table.tbl-tp5 td span.ccc {
+  background-color: #ffffff;
+  border-right: 1px solid black;
+}
+
+/* ----- 表 上がりタイム ------- */
+table.tbl-tp6 td:nth-child(1),
+table.tbl-tp6 td:last-child {
+  text-align: left;
+  padding-left: 0.5em;
+  min-width: 5.6em;
+}
+table.tbl-tp6 td:nth-child(1) span {
+  font-size: 86%;
+}
+table.tbl-tp6 td:last-child span:nth-child(n + 2) {
+  padding-left: 0.7em;
+}
+table.tbl-tp6 td:last-child span:last-child {
+  font-size: 86%;
+}
+table.tbl-tp6 th {
+  min-width: 3.5em;
+}
+table.tbl-tp6 tr:nth-child(1) th {
+  min-width: 5.5em;
+} /* 競輪場名の ミニマム幅 */
+table.tbl-tp6 tr:nth-child(2) th:nth-child(3n + 1) {
+  font-size: 96%;
+} /* クラス平均 と チャレンジ は 文字数多いので やや小さめ */
+table.bk33s td:nth-child(1) {
+  background-color: #daede8;
+}
+table.bk400s td:nth-child(1) {
+  background-color: #fdfaed;
+}
+table.bk500s td:nth-child(1) {
+  background-color: #eaddd5;
+}
+
+/* ----- 表 配当データ ----------------- */
+table.tbl-tp7 th.much_num {
+  font-size: 92%;
+  padding-left: 3px;
+  padding-right: 4px;
+}
+table.tbl-tp7 td:nth-child(1) {
+  text-align: left;
+  padding-left: 0.5em;
+}
+table.tbl-tp7 td:nth-child(1) span:nth-child(1) {
+  font-size: 86%;
+}
+table.tbl-tp7 td:nth-child(1) span:nth-child(2) {
+  font-size: 78%;
+}
+table.tbl-tp7 td:nth-child(n + 4):nth-child(-n + 6) {
+  background-color: #f3f5f7;
+}
+
+/* ----- 表 スジ車券・力車券 ----------------- */
+table.tbl-tp9 td:nth-child(1) {
+  text-align: left;
+  padding-left: 0.5em;
+}
+table.tbl-tp9 td:nth-child(1) span:nth-child(1) {
+  font-size: 86%;
+}
+table.tbl-tp9 td:nth-child(1) span:nth-child(2) {
+  font-size: 78%;
+}
+table.tbl-tp9 td {
+  min-width: 5em;
+}
+table.tbl-tp9 td:nth-child(3) {
+  background-color: #f3f5f7;
+}
+
+/* ----- 表 1着・2着選手のライン上の位置 ----------------- */
+table.tbl-tp10 tr:nth-child(2) th {
+  font-size: 92%;
+  line-height: 0.98;
+}
+table.tbl-tp10 td:nth-child(1) {
+  text-align: left;
+  padding-left: 0.5em;
+}
+table.tbl-tp10 td:nth-child(1) span:nth-child(1) {
+  font-size: 86%;
+}
+table.tbl-tp10 td:nth-child(1) span:nth-child(2) {
+  font-size: 78%;
+}
+table.tbl-tp10 td:nth-child(5n) {
+  font-size: 92%;
+}
+table.tbl-tp10 td:nth-child(n + 7) {
+  background-color: #f3f5f7;
+}
+
+/* ----- 表 競輪場の特徴 ----------------- */
+table.tbl-tp11 {
+  max-width: 700px;
+}
+table.tbl-tp11 td:nth-child(1) {
+  text-align: left;
+  padding-left: 0.5em;
+  min-width: 5.6em;
+}
+table.tbl-tp11 td:nth-child(1) span:nth-child(1) {
+  font-size: 86%;
+}
+table.tbl-tp11 td:nth-child(1) span:nth-child(2) {
+  font-size: 78%;
+}
+table.tbl-tp11 td:nth-child(2) {
+  text-align: left;
+  padding-left: 0.5em;
+  white-space: normal;
+}
+
+.footer_button {
+  display: center;
+  font-size: 40%;
+  background: black;
+  border-radius: 10px;
+  border: none;
+  margin: 0.5em;
+  width: auto;
+  height: 3em;
+  padding: 1px 4.5px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer_button--kasu {
+  background: pink;
+  margin: 20rem;
+}
+
+.footer_button a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    height: 10vw;
+    z-index: 2;
+  }
+
+  .container {
+    margin: auto 1em;
+  }
+
+  .hamburger {
+    margin-top: 0.8vh;
+    width: 7.5vw;
+    height: 3vh;
+  }
+
+  .gamboo_logo {
+    margin: 0.8vh;
+    height: 3vh;
+  }
+
+  .menu_on {
+    margin-top: 10vw;
+  }
+
+  .menu_on div {
+    margin-top: 25vw;
+  }
+
+  .menu_on div p {
+    font-size: 8.5vw;
+    margin: -3rem auto 6rem auto;
+    max-width: 70vw;
+  }
+
+  .main_title_logo {
+    padding: 25px;
+    margin-top: 10vw;
+  }
+
+  .wrapper {
+    padding-top: 30px;
+  }
+
+  .main_section {
+    margin-bottom: 5px;
+  }
+
+  .main_section hr {
+    width: 90vw;
+  }
+
+  .general_image {
+    width: 85vw;
+  }
+
+  .title {
+    max-width: 85vw;
+    width: 85vw;
+    font-size: 195%;
+    margin: 6.5vw auto;
+    line-height: 9.5vw;
+    padding-top: calc(10vw + 20px);
+  }
+
+  .release_date {
+    font-size: 40%;
+    margin: auto 1vw;
+  }
+
+  .main_section p {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    max-width: 90vw;
+    width: 90vw;
+  }
+
+  .annotation_explanation {
+    max-width: 90vw;
+    width: 90vw;
+    margin: 1.5vh auto;
+  }
+
+  .annotation_explanation p.first {
+    max-width: 85vw;
+    width: 85vw;
+    margin: 1vh 1vw;
+    line-height: 2.5vh;
+  }
+
+  .annotation_explanation p {
+    max-width: 85vw;
+    width: 85vw;
+    margin: 1vh auto;
+    line-height: 2.5vh;
+  }
+
+  .outline {
+    max-width: 90vw;
+    width: 90vw;
+    padding-top: 5px;
+  }
+
+  .sub_outline {
+    max-width: 90vw;
+    width: 90vw;
+    margin-top: 0.5vw;
+    margin-bottom: -0.5vw;
+  }
+
+  .sub_outline_2 {
+    max-width: 90vw;
+    width: 90vw;
+    margin-top: 5vw;
+  }
+
+  .main_back {
+    width: 90vw;
+    height: 75vw;
+    border-radius: 20px;
+    background: #dcb5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main_image {
+    width: 80vw;
+    height: 45vw;
+    border-radius: 20px;
+    margin: 15px auto;
+  }
+
+  .button_align {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main_button {
+    width: 85px;
+    height: 30px;
+    margin: 15px 1.5vw;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #000000 70%, #27296d 30%);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 105%;
+    cursor: pointer;
+  }
+
+  .dr_tohyama_inserting {
+    margin: 5vw;
+  }
+
+  .dr_tohyama_general {
+    width: 75.15px;
+    height: 86.85px;
+    margin: 0.6vw;
+  }
+
+  .dr_tohyama_textbox {
+    max-width: 70vw;
+    width: 70vw;
+    margin: 0.6vw;
+  }
+
+  .dr_tohyama_textbox p {
+    font-size: 3.5vw;
+    margin: 4.5vw 2.5vw;
+    line-height: 4.8vw;
+    max-width: 65vw;
+    width: 70vw;
+  }
+
+  .tohyama_list {
+    font-size: 3.5vw;
+    margin-left: -3.5vw;
+  }
+
+  .tohyama_list li {
+    margin: 0.05em auto;
+    line-height: 1.25em;
+    max-width: 55vw;
+  }
+
+  .table-wrap_sp {
+    width: 90vw;
+    max-width: 90vw;
+    overflow-x: scroll;
+    margin: 0.5rem auto;
+  }
+
+  table {
+    margin-top: 5vw;
+    font-size: 90%;
+  }
+
+  caption {
+    margin: 0 0 1.5vw 1vw;
+  }
+
+  th,
+  td {
+    padding: 0.6vw 1vw;
+  }
+
+  .article_end {
+    margin-top: -15px;
+    margin-bottom: -25px;
+  }
+
+  .article_end div {
+    width: 65vw;
+    height: 15vw;
+    margin: 10vw;
+  }
+
+  .article_end div p {
+    font-size: 6vw;
+    margin: 3vw auto;
+  }
+
+  .footer_section {
+    padding: 1em 3.5em;
+  }
+
+  .foot_note {
+    font-size: 85%;
+    margin-bottom: 3.5em;
+  }
+
+  .table_add {
+    margin-top: -0.5em;
+  }
+
+  .table_add_35_6 {
+    font-size: 75% !important;
+    margin-top: -0.5em;
+  }
+
+  table.tbl-tp11 {
+    max-width: 850px;
+  }
+
+  table.tbl-average {
+    font-size: 78%;
+  }
+}
